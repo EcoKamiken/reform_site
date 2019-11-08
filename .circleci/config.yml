@@ -55,7 +55,7 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-      - attach_test
+      - attach_test:
           requires:
             - build
       - deploy:
