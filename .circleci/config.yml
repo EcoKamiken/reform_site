@@ -19,7 +19,7 @@ jobs:
           command: yarn run build
       - persist_to_workspace:
           root: dist
-          paths: index.html
+          paths: .
       - save_cache:
           name: Yarn キャッシュを保存
           key: yarn-packages-{{ checksum "yarn.lock" }}
