@@ -12,6 +12,6 @@ gulp.task("ejs", (done) => {
     .pipe(rename({
       extname: ".html"
     }))
-    .pipe(gulp.dest("./"));
+    .pipe(gulp.dest("./dist"));
   done();
 })
