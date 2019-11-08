@@ -1,15 +1,15 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/workspace
+    working_directory: ~/repo
     docker:
-      - image: node:6.10.0
+      - image: circleci/node:6.10.0
     steps:
       - checkout
       - run:
         name: System information
         command: |
-          echo "None $(node -v)"
+          echo "Node $(node -v)"
           echo "Yarn v$(yarn --version)"
       - run:
         name: Install devDependencies
