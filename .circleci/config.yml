@@ -3,20 +3,22 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/node:6.10.0
+      - image: circleci/node:latest
     steps:
       - checkout
-      - run:
-        name: System information
-        command: |
-          echo "Node $(node -v)"
-          echo "Yarn v$(yarn --version)"
-      - run:
-        name: Install devDependencies
-        command: yarn -D
-      - run:
-        name: Build
-        command: ./node_modules/.bin/gulp ejs
+      - run: echo "test"
+        #      - run:
+        #        name: System information
+        #        command: >-
+        #          echo "Node $(node -v)";
+        #          echo "Yarn v$(yarn --version)";
+        #      - run:
+        #        name: Install devDependencies
+        #        command: >-
+        #          yarn -D
+        #      - run:
+        #        name: Build
+        #        command: ./node_modules/.bin/gulp ejs
   deploy:
     machine:
       enabled: true
