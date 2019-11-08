@@ -5,7 +5,7 @@ var replace = require("gulp-replace")
 
 gulp.task("ejs", (done) => {
   gulp
-    .src(["src/**/*.ejs", "!" + "src/**/_*.ejs"])
+    .src(["src/pages/*.ejs", "!" + "src/**/_*.ejs"])
     .pipe(ejs({}, {}, {
       ext: '.html'
     }))
@@ -14,4 +14,8 @@ gulp.task("ejs", (done) => {
     }))
     .pipe(gulp.dest("./dist"));
   done();
+})
+
+gulp.task('watch', () => {
+  gulp.watch('./src/**/*', gulp.task('ejs'))
 })

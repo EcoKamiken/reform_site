@@ -167,4 +167,4 @@ $RECYCLE.BIN/
 
 *.swp
 *.html
-!/dist/*.html
+!.gitkeep
