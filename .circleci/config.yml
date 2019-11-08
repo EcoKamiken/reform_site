@@ -1,23 +1,5 @@
 version: 2
 jobs:
-  build:
-    working_directory: ~/repo
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - checkout
-      - run:
-          name: System information
-          command: >-
-            echo "Node $(node -v)"
-            echo "Yarn v$(yarn --version)"
-      - run:
-          name: Install devDependencies
-          command: >-
-            yarn -D
-      - run:
-          name: Build
-          command: yarn run build
   deploy:
     machine:
       enabled: true
@@ -34,10 +16,7 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build
       - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: master
