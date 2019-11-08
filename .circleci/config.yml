@@ -1,5 +1,17 @@
 version: 2
 jobs:
+  build:
+    docker:
+      - image: circleci:node12.13.0
+    working_directory: /tmp
+    steps:
+      - run:
+          name: Creating Artifacts
+          command: >-
+            echo "MY ARTIFACT" > /tmp/artifact-1;
+      - store_artifacts:
+          path: /tmp/artifact-1
+          destination: artifact-file
   deploy:
     machine:
       enabled: true
