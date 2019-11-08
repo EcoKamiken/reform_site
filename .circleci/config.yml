@@ -9,9 +9,7 @@ jobs:
           name: Yarn キャッシュを復元
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: HTML展開先ディレクトリ作成
-          command: mkdir -p dist
+      - run: ls
       - run:
           name: Yarn 依存関係をインストール
           command: yarn install --frozen-lockfile
@@ -20,8 +18,6 @@ jobs:
           command: yarn run build
       - persist_to_workspace:
           root: dist
-          paths:
-            - \*.html
       - save_cache:
           name: Yarn キャッシュを保存
           key: yarn-packages-{{ checksum "yarn.lock" }}
