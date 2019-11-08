@@ -47,7 +47,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ./dist
-      - run: cat ./dist/*.html
+      - run: pwd
+      - run: ls
+      - run: ls dist
 workflows:
   version: 2
   build-and-deploy:
