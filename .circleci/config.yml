@@ -1,25 +1,9 @@
 version: 2
 jobs:
-  build:
-    working_directory: ~/workspace
-    docker:
-      - image: node:6.10.0
-    steps:
-      - checkout
-      - run:
-        name: System information
-        command: |
-          echo "None $(node -v)"
-          echo "Yarn v$(yarn --version)"
-      - run:
-        name: Install devDependencies
-        command: yarn -D
-      - run:
-        name: Build
-        command: ./node_modules/.bin/gulp ejs
   deploy:
     machine:
       enabled: true
+      image: circleci/classic:latest
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -32,10 +16,6 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
-          filters:
-            branches:
-              only: master
       - deploy:
           filters:
             branches:
