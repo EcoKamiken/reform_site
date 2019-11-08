@@ -10,8 +10,8 @@ jobs:
             - "b1:ff:f4:96:48:2c:43:59:ec:4b:da:55:e5:ab:3d:8d"
       - run:
           name: Deploy Over SSH
-          command: |
-            ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "cd ~/web/reform_test; git pull"
+          command: >-
+            ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "cd ~/web/reform_test; git pull; ~/web/reform_test/deploy.sh"
 workflows:
   version: 2
   build-and-deploy:
