@@ -32,35 +32,23 @@ jobs:
     steps:
       - attach_workspace:
           at: dist
-      - run: ls dist
       - add_ssh_keys:
           fingerprints:
             - "b1:ff:f4:96:48:2c:43:59:ec:4b:da:55:e5:ab:3d:8d"
       - run:
           name: Deploy Over SSH
           command: >-
-            ssh $SSH_USER@$SSH_HOST -p $SSH_PORT "cd ~/web/reform_test; git pull; chmod +x ~/web/reform_test/deploy.sh; ~/web/reform_test/deploy.sh"
-  attach_test:
-    machine:
-      enabled: true
-      image: circleci/classic:latest
-    steps:
-      - attach_workspace:
-          at: ./dist
-      - run: pwd
-      - run: ls
-      - run: ls dist
+            scp dist/* $SSH_USER@$SSH_HOST:~/web/reform_testt
 workflows:
   version: 2
   build-and-deploy:
     jobs:
       - build
-      - attach_test:
-          requires:
-            - build
       - deploy:
           requires:
             - build
           filters:
             branches:
-              only: master
+              only:
+                - master
+                - feature/componentization
