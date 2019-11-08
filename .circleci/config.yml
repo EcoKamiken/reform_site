@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: >-
-            scp dist/* $SSH_USER@$SSH_HOST:~/web/reform_testt
+            scp dist/* $SSH_USER@$SSH_HOST:~/web/reform_testt -P 2222
 workflows:
   version: 2
   build-and-deploy:
@@ -49,6 +49,4 @@ workflows:
             - build
           filters:
             branches:
-              only:
-                - master
-                - feature/componentization
+              only: master
