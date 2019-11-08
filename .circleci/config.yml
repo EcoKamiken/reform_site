@@ -5,24 +5,36 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
+      - restore_cache:
+          name: Yarn キャッシュを復元
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: HTML展開先ディレクトリ作成
+          command: mkdir -p dist
       - run:
           name: Yarn 依存関係をインストール
-          command: yarn -D
+          command: yarn install --frozen-lockfile
       - run:
           name: ビルド
           command: yarn run build
       - persist_to_workspace:
-          root: ./dist
+          root: dist
           paths:
             - \*.html
+      - save_cache:
+          name: Yarn キャッシュを保存
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
   deploy:
     machine:
       enabled: true
       image: circleci/classic:latest
     steps:
       - attach_workspace:
-          at: ./dist
-      - run: cat ./dist/*.html
+          at: dist
+      - run: ls dist
       - add_ssh_keys:
           fingerprints:
             - "b1:ff:f4:96:48:2c:43:59:ec:4b:da:55:e5:ab:3d:8d"
