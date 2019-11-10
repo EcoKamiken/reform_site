@@ -17,7 +17,7 @@
     "sass": "^1.23.3"
   },
   "scripts": {
-    "build": "gulp ejs",
+    "build": "gulp ejs copy sass",
     "ci:test": "circleci config validate -c .circleci/config.yml && circleci local execute --job build"
   },
   "dependencies": {
