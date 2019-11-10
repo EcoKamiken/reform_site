@@ -2,6 +2,16 @@ var gulp = require("gulp");
 var rename = require("gulp-rename")
 var ejs = require("gulp-ejs")
 var replace = require("gulp-replace")
+var sass = require('gulp-sass')
+
+gulp.task('copy', () => {
+  return gulp.src([
+      'src/css/*', 'src/images/*'
+    ], {
+      base: 'src'
+    })
+    .pipe(gulp.dest('dist'))
+})
 
 gulp.task("ejs", (done) => {
   gulp
@@ -12,10 +22,22 @@ gulp.task("ejs", (done) => {
     .pipe(rename({
       extname: ".html"
     }))
-    .pipe(gulp.dest("./dist"));
-  done();
+    .pipe(gulp.dest("./dist"))
+  done()
 })
 
-gulp.task('watch', () => {
-  gulp.watch('./src/**/*', gulp.task('ejs'))
+
+gulp.task('sass', (done) => {
+  gulp.src('src/sass/*.sass')
+    .pipe(sass({
+      outputStyle: 'expanded'
+    }))
+    .pipe(gulp.dest('dist/css'))
+  done()
+})
+
+gulp.task('watch', (done) => {
+  gulp.watch('src/**/*.ejs', gulp.task('ejs'))
+  gulp.watch('src/sass/*.sass', gulp.task('sass'))
+  done()
 })
