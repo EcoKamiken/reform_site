@@ -6,7 +6,7 @@ var sass = require('gulp-sass')
 
 gulp.task('copy', () => {
   return gulp.src([
-      'src/css/*', 'src/images/*'
+      'src/images/*', 'src/js/*'
     ], {
       base: 'src'
     })
@@ -39,5 +39,7 @@ gulp.task('sass', (done) => {
 gulp.task('watch', (done) => {
   gulp.watch('src/**/*.ejs', gulp.task('ejs'))
   gulp.watch('src/sass/*.sass', gulp.task('sass'))
+  gulp.watch('src/images/*', gulp.task('copy'))
+  gulp.watch('src/js/*', gulp.task('copy'))
   done()
 })
