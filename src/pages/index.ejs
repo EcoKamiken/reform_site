@@ -1,28 +1,24 @@
 <% include ../components/_header %>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#slides" data-slide-to="0" class="active"></li>
-    <li data-target="#slides" data-slide-to="1"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/fv_01-min.jpg">
-      <div class="carousel-caption">
-        <h3 class="display-2">リフォームで、家族が笑顔になる</h3>
-        <h1>Kamiken Reform</h1>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/fv_02-min.jpg">
-      <div class="carousel-caption">
-        <h3 class="display-2">リフォームで、家族が笑顔になる</h3>
-        <h1>KamikenReform</h1>
+<section class="section is-paddingless">
+  <div class="container is-fluid is-paddingless">
+    <div class="swiper-container-slide">
+      <p class="slide-caption">リフォームで、家族が笑顔になる</p>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/top-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/top-2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/top-3.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
 
 <!--- Jumbotron -->
 
@@ -200,11 +196,7 @@
       </div>
     </div>
   </div>
-
 </div>
-
-
-<!--- Two Column Section -->
 
 <!--- Footer -->
 <% include ../components/_footer %>
