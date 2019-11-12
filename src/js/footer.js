@@ -11,7 +11,7 @@ var swiper = new Swiper('.swiper-container-slide', {
     disableOnInteraction: false
   },
   breakpoints: {
-    1023: {
+    560: {
       slidesPerView: 1,
       spaceBetween: 0
     },

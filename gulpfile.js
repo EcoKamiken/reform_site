@@ -4,13 +4,15 @@ var ejs = require("gulp-ejs")
 var replace = require("gulp-replace")
 var sass = require('gulp-sass')
 
+var destination = 'dist/reform_test'
+
 gulp.task('copy', () => {
   return gulp.src([
       'src/images/*', 'src/js/*'
     ], {
       base: 'src'
     })
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(destination))
 })
 
 gulp.task("ejs", (done) => {
@@ -22,7 +24,7 @@ gulp.task("ejs", (done) => {
     .pipe(rename({
       extname: ".html"
     }))
-    .pipe(gulp.dest("./dist"))
+    .pipe(gulp.dest(destination))
   done()
 })
 
@@ -32,7 +34,7 @@ gulp.task('sass', (done) => {
     .pipe(sass({
       outputStyle: 'expanded'
     }))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest(destination + '/css'))
   done()
 })
 

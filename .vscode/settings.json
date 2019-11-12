@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "reform"
+    "liveServer.settings.multiRootWorkspaceName": "reform",
+    "liveServer.settings.root": "dist",
 }
