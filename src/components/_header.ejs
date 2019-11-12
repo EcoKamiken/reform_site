@@ -1,3 +1,7 @@
+<%
+var rootName = '/reform_test'
+%>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -18,7 +22,7 @@
       <header>
         <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <a class="navbar-item" href="/reform_test">
+            <a class="navbar-item" href="<%= rootName %>">
               <img src="images/logo.png" width="200" height="50" alt="Kamiken Reform">
             </a>
 
@@ -32,16 +36,16 @@
 
           <div id="navbarBasic" class="navbar-menu">
             <div class="navbar-start">
-              <a class="navbar-item" href="/reform_test">
+              <a class="navbar-item" href="<%= rootName %>">
                 トップ
               </a>
-              <a class="navbar-item" href="/reform_test#service">
+              <a class="navbar-item" href="<%= rootName %>#service">
                 サービス
               </a>
-              <a class="navbar-item" href="/reform_test#staff">
+              <a class="navbar-item" href="<%= rootName %>#staff">
                 スタッフ
               </a>
-              <a class="navbar-item" href="/reform_test#voice">
+              <a class="navbar-item" href="<%= rootName %>#voice">
                 お客様の声
               </a>
             </div>
