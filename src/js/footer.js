@@ -1,6 +1,7 @@
 // Slider
 var swiper = new Swiper('.swiper-container-slide', {
   effect: "slide",
+  speed: 600,
   loop: true,
   slidesPerView: 2,
   spaceBetween: 2,
@@ -9,9 +10,8 @@ var swiper = new Swiper('.swiper-container-slide', {
     delay: 3000,
     disableOnInteraction: false
   },
-  speed: 600,
   breakpoints: {
-    767: {
+    1023: {
       slidesPerView: 1,
       spaceBetween: 0
     },
