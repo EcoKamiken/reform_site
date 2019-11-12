@@ -14,3 +14,7 @@ yarn run build
 ```shell
 npx gulp watch
 ```
+
+## 画像サイズ
+
+1200×750

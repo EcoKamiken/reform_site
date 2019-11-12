@@ -3,6 +3,24 @@
 $navbar-item-img-max-height: 50px
 @import "../../node_modules/bulma/bulma.sass"
 
+html
+    overflow: auto
+
+body
+    overflow: hidden
+    min-width: 320px
+
 .navbar-burger
     height: 66px
     width: 66px
+
+.slide-caption
+    z-index: 10
+    position: absolute
+    bottom: 5%
+    right: 5%
+    color: aliceblue
+    text-shadow: 1px 1px 4px #333
+
+.title
+    font-family: serif
