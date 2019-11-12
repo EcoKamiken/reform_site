@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: >-
-            scp -r -P 2222 dist/* $SSH_USER@$SSH_HOST:~/web/reform_test
+            scp -r -P 2222 dist/reform_test/* $SSH_USER@$SSH_HOST:~/web/reform_test
 workflows:
   version: 2
   build-and-deploy:
