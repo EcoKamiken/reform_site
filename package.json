@@ -11,6 +11,7 @@
     "ejs-cli": "^2.1.1",
     "eslint": "^6.6.0",
     "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
     "gulp-ejs": "^4.1.2",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
@@ -20,7 +21,7 @@
     "sass": "^1.23.3"
   },
   "scripts": {
-    "build": "gulp ejs copy sass",
+    "build": "gulp ejs sass image js",
     "ci:test": "circleci config validate -c .circleci/config.yml && circleci local execute --job build"
   },
   "dependencies": {

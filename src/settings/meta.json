@@ -1,0 +1,50 @@
+{
+  "default": {
+    "title": "Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "index": {
+    "title": "ホーム - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "all-electric": {
+    "title": "オール電化 - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "bath": {
+    "title": "お風呂 - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "craftsman": {
+    "title": "職人 - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "flow": {
+    "title": "リフォームの流れ - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "kitchen": {
+    "title": "キッチン - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "qa": {
+    "title": "Q&A - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "staff": {
+    "title": "スタッフ - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "toilet": {
+    "title": "トイレ - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "voice": {
+    "title": "お客様の声 - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  },
+  "washbasin": {
+    "title": "洗面台 - Kamiken Reform",
+    "description": "上里建設の安心リフォーム"
+  }
+}

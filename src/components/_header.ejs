@@ -1,6 +1,13 @@
 <%
-var rootName = '/reform_test'
-%>
+  var rootName = '/reform_test'
+
+  var _default = meta['default']
+  for(var key in _default) {
+    if(typeof page[key] === 'undefined') {
+      page[key] = _default[key]
+    }
+  }
+-%>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -8,8 +15,8 @@ var rootName = '/reform_test'
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kamiken Reform</title>
-
+  <title><%= page['title'] %></title>
+  <meta name="description" content="<%= page['description'] %>">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <script src="js/header.js"></script>
