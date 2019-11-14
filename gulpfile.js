@@ -29,6 +29,16 @@ var src = {
   page: [source, 'pages', '*.ejs'].join('/'),
   sass: [source, 'sass', '*.sass'].join('/'),
   service: [source, 'services', '*.json'].join('/'),
+  allElectric: [source, 'settings', 'all-electric.json'].join('/'),
+  bath: [source, 'settings', 'bath.json'].join('/'),
+  craftsman: [source, 'settings', 'craftsman.json'].join('/'),
+  flow: [source, 'settings', 'flow.json'].join('/'),
+  kitchen: [source, 'settings', 'kitchen.json'].join('/'),
+  qa: [source, 'settings', 'qa.json'].join('/'),
+  staff: [source, 'settings', 'staff.json'].join('/'),
+  toilet: [source, 'settings', 'toilet.json'].join('/'),
+  voice: [source, 'settings', 'voice.json'].join('/'),
+  washbasin: [source, 'settings', 'washbasin.json'].join('/'),
 }
 
 // Distribute
@@ -85,10 +95,22 @@ gulp.task('js', (done) => {
 // ejsビルド
 gulp.task("ejs", (done) => {
   var meta = JSON.parse(fs.readFileSync(src.meta, 'utf8'))
+  var allElectric = JSON.parse(fs.readFileSync(src.allElectric, 'utf8'))
+  var bath = JSON.parse(fs.readFileSync(src.bath, 'utf8'))
+  var craftsman = JSON.parse(fs.readFileSync(src.craftsman, 'utf8'))
+  var flow = JSON.parse(fs.readFileSync(src.flow, 'utf8'))
+  var kitchen = JSON.parse(fs.readFileSync(src.kitchen, 'utf8'))
+  var qa = JSON.parse(fs.readFileSync(src.qa, 'utf8'))
+  var staff = JSON.parse(fs.readFileSync(src.staff, 'utf8'))
+  var toilet = JSON.parse(fs.readFileSync(src.toilet, 'utf8'))
+  var voice = JSON.parse(fs.readFileSync(src.voice, 'utf8'))
+  var washbasin = JSON.parse(fs.readFileSync(src.washbasin, 'utf8'))
+
   gulp
     .src([src.page, "!" + src.component])
     .pipe(ejs({
-      meta
+      meta,
+      allElectric
     }, {}, {
       ext: '.html'
     }))
@@ -99,10 +121,11 @@ gulp.task("ejs", (done) => {
   done()
 })
 
+// 開発用watchタスク
 gulp.task('watch', (done) => {
-  gulp.watch('src/**/*.ejs', gulp.task('ejs'))
-  gulp.watch('src/sass/*.sass', gulp.task('sass'))
-  gulp.watch('src/images/*', gulp.task('copy'))
-  gulp.watch('src/js/*', gulp.task('copy'))
+  gulp.watch(src.page, gulp.task('ejs'))
+  gulp.watch(src.sass, gulp.task('sass'))
+  gulp.watch(src.image, gulp.task('image'))
+  gulp.watch(src.js, gulp.task('js'))
   done()
 })
