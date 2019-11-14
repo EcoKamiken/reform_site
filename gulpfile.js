@@ -13,25 +13,26 @@ var destination = 'dist/reform_test'
 out_dir = 'reform_test'
 source = 'src'
 distribute = 'dist'
-base = path.join(distribute, out_dir)
+base = [distribute, out_dir].join('/')
+
+// FIXME: array.join('/') 遅すぎる
 
 // Source
 var src = {
   src: source,
-  js: path.join(source, 'js', '*.js'),
-  sass: path.join(source, 'sass', '*.sass'),
-  image: path.join(source, 'images', '*'),
-  service: path.join(source, 'services', '*.json'),
-  page: path.join(source, 'pages', '*.ejs'),
-  component: path.join(source, 'components', '_*.ejs'),
-
+  js: [source, 'js', '*.js'].join('/'),
+  sass: [source, 'sass', '*.sass'].join('/'),
+  image: [source, 'images', '*'].join('/'),
+  service: [source, 'services', '*.json'].join('/'),
+  page: [source, 'pages', '*.ejs'].join('/'),
+  component: [source, 'components', '_*.ejs'].join('/'),
 }
 
 // Distribute
 var dist = {
   dist: distribute,
   base: base,
-  css: path.join(base, 'css')
+  css: [base, 'css'].join('/')
 }
 
 // src, distディクショナリの中身を一覧表示
@@ -47,6 +48,17 @@ gulp.task('vars', (done) => {
 gulp.task('clean', () => {
   console.log('Delete: ' + dist.dist)
   return del(dist.dist)
+})
+
+// sassビルド
+gulp.task('sass', (done) => {
+  gulp.src(src.sass)
+    .pipe(plumber())
+    .pipe(sass({
+      outputStyle: 'expanded'
+    }))
+    .pipe(gulp.dest(dist.css))
+  done()
 })
 
 gulp.task('copy', () => {
@@ -72,16 +84,6 @@ gulp.task("ejs", (done) => {
 })
 
 
-gulp.task('sass', (done) => {
-  console.log(src.sass + ' -> ' + dist.css)
-  gulp.src(src.sass)
-    .pipe(plumber())
-    .pipe(sass({
-      outputStyle: 'expanded'
-    }))
-    .pipe(gulp.dest(p.dist.css))
-  done()
-})
 
 gulp.task('watch', (done) => {
   gulp.watch('src/**/*.ejs', gulp.task('ejs'))
