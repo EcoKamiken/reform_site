@@ -7,10 +7,13 @@
   "license": "MIT",
   "devDependencies": {
     "bulma": "^0.8.0",
+    "del": "^5.1.0",
     "ejs-cli": "^2.1.1",
     "eslint": "^6.6.0",
     "gulp": "^4.0.2",
     "gulp-ejs": "^4.1.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
