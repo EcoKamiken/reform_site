@@ -1,4 +1,8 @@
-<% include ../components/_header %>
+<%-
+  include('../components/_header', {
+    page: meta['index']
+  })
+%>
 
 <section class="section is-paddingless">
   <div class="container is-fluid is-paddingless">
@@ -20,27 +24,8 @@
   </div>
 </section>
 
-<!-- Hero
-<section class="hero is-medium">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        最新最速であり続ける。
-      </h1>
-      <p>当社は常に何事においても最新最速であり続ける。</p>
-      <p>常に先進性に富み、「未来」を切り開く事に全力で挑み続ける。</p>
-      <p>お客様の利益と繁栄を常に考える。</p>
-      <p>お客様の利益と繁栄が当社の利益と繁栄となる事を知っている。</p>
-      <p>お世話になった事はいつまでも忘れない。</p>
-      <p>上里建設は、多様な働き方実践企業として取り組んでいます。</p>
-      <p>埼玉版ウーマノミクスの趣旨に賛同し、多様な働き方を推進します。</p>
-    </div>
-  </div>
-</section>
--->
-
 <!-- Service -->
-<section class="section">
+<section class="section main-menu">
   <span class="anchor" id="service"></span>
   <div class="container">
     <h1 class="title">サービス</h1>
@@ -81,7 +66,7 @@
 </section>
 
 <!-- Staff -->
-<section class="section">
+<section class="section main-menu">
   <span class="anchor" id="staff"></span>
   <div class="container">
     <h1 class="title">スタッフ</h1>
@@ -104,7 +89,7 @@
 </section>
 
 <!-- お客様の声 -->
-<section class="section">
+<section class="section main-menu">
   <span class="anchor" id="voice"></span>
   <div class="container">
     <h1 class="title">お客様の声</h1>
