@@ -108,9 +108,19 @@ gulp.task("ejs", (done) => {
 
   gulp
     .src([src.page, "!" + src.component])
+    .pipe(plumber())
     .pipe(ejs({
       meta,
-      allElectric
+      allElectric,
+      bath,
+      craftsman,
+      flow,
+      kitchen,
+      qa,
+      staff,
+      toilet,
+      voice,
+      washbasin
     }, {}, {
       ext: '.html'
     }))
