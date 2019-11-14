@@ -10,12 +10,29 @@
 
     <% for (key in kitchen['items']) { %>
     <% if(kitchen['items'][key].visible) { %>
-    <div class="column is-4">
-      <h1 class="title is-3"><%= kitchen['items'][key].manufacturer + ' ' + kitchen['items'][key].series %> 商品ID:
-        <%= kitchen['items'][key].id %></h1>
-      <img src="<%= kitchen['items'][key].manufacturer_image %>"
-        alt="<%= kitchen['items'][key].manufacturer_image_description %>" />
-      <p><%= kitchen['items'][key].description %></p>
+    <div class="column is-4 has-text-centered">
+      <h1 class="title is-3">
+        <%= kitchen['items'][key].manufacturer + ' ' + kitchen['items'][key].series %>
+      </h1>
+
+      <img src="<%= kitchen['items'][key].product_image %>"
+        alt="<%= kitchen['items'][key].product_image_description %>" />
+
+      <p class="has-text-left">
+        商品ID:<%= kitchen['items'][key].id %>
+      </p>
+
+      <p class="has-text-left">
+        <%= kitchen['items'][key].description %>
+      </p>
+
+      <p>
+        希望小売価格 ￥<%= kitchen['items'][key].retail_price.toLocaleString() %>円
+      </p>
+
+      <h2 class='subtitle'>
+        <%= kitchen['items'][key].price.toLocaleString() %>円
+      </h2>
     </div>
     <% } %>
     <% } %>

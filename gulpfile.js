@@ -23,7 +23,7 @@ base = [distribute, out_dir].join('/')
 var src = {
   src: source,
   component: [source, 'components', '_*.ejs'].join('/'),
-  image: [source, 'images', '*'].join('/'),
+  image: [source, 'images', '**', '*'].join('/'),
   js: [source, 'js', '*.js'].join('/'),
   meta: [source, 'settings', 'meta.json'].join('/'),
   page: [source, 'pages', '*.ejs'].join('/'),
