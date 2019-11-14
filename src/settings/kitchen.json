@@ -1,25 +1,48 @@
 {
     "items": [{
+            "visible": true,
             "id": 1,
-            "manufacture": "manufacture",
-            "series": "series",
-            "size": [100, 200],
-            "model": "Type-A",
-            "retail_price": 10000,
-            "price": 9900,
-            "description": "Type-A desu",
-            "image_url": "images"
+            "manufacturer": "LIXIL",
+            "manufacturer_image": "images/manufacturers/lixil.jpg",
+            "manufacturer_image_description": "LIXIL",
+            "series": "シエラ",
+            "size": [2550],
+            "model": "I型",
+            "retail_price": 599000,
+            "price": 239600,
+            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
+            "image_url": "images/products/1.jpg",
+            "image_description": "LIXIL シエラi型"
         },
         {
+            "visible": false,
             "id": 2,
-            "manufacture": "manufacture",
-            "series": "series",
-            "size": [100, 200],
-            "model": "Type-B",
-            "retail_price": 10000,
-            "price": 9900,
-            "description": "Type-B desu",
-            "image_url": "images/kitchen/"
+            "manufacturer": "LIXIL",
+            "manufacturer_image": "images/manufacturers/lixil.jpg",
+            "manufacturer_image_description": "",
+            "series": "シエラ",
+            "size": [2550],
+            "model": "I型",
+            "retail_price": 599000,
+            "price": 239600,
+            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
+            "image_url": "images/products/1.jpg",
+            "image_description": "LIXIL シエラi型"
+        },
+        {
+            "visible": true,
+            "id": 3,
+            "manufacturer": "LIXIL",
+            "manufacturer_image": "images/manufacturers/lixil.jpg",
+            "manufacturer_image_description": "images/manufacturers/lixil.jpg",
+            "series": "シエラ",
+            "size": [2550],
+            "model": "I型",
+            "retail_price": 599000,
+            "price": 239600,
+            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
+            "image_url": "images/products/1.jpg",
+            "image_description": "LIXIL シエラi型"
         }
     ]
 }

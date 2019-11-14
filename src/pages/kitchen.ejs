@@ -4,19 +4,38 @@
   })
 %>
 
+
+<section class="section">
+  <div class="columns">
+
+    <% for (key in kitchen['items']) { %>
+    <% if(kitchen['items'][key].visible) { %>
+    <div class="column">
+      <h1 class="title is-3"><%= kitchen['items'][key].manufacturer + ' ' + kitchen['items'][key].series %> 商品ID:
+        <%= kitchen['items'][key].id %></h1>
+      <img src="<%= kitchen['items'][key].manufacturer_image %>"
+        alt="<%= kitchen['items'][key].manufacturer_image_description %>" />
+      <p><%= kitchen['items'][key].description %></p>
+    </div>
+    <% } %>
+    <% } %>
+
+  </div>
+</section>
+
 <!--- Image Slider -->
 <div class="carousel-inner">
-    <img src="./images/kitchen_02-min.jpg">
-    <div class="carousel-caption">
-        <h1>Kitchen Reform</h1>
-    </div>
+  <img src="./images/kitchen_02-min.jpg">
+  <div class="carousel-caption">
+    <h1>Kitchen Reform</h1>
+  </div>
 </div>
 
 <!--- Jumbotron -->
 <div class="lead">
-    <div class="content">
-        <h2>“リフォームのことなら上里建設へ”</h2>
-    </div>
+  <div class="content">
+    <h2>“リフォームのことなら上里建設へ”</h2>
+  </div>
 </div>
 
 
@@ -24,209 +43,209 @@
 
 <div class="page">
 
-    <div class="container-fluid padding">
-        <div class="row padding text-left">
-            <div class="col-12">
-                <h3 class="display-4">商品ラインナップ</h3>
-            </div>
+  <div class="container-fluid padding">
+    <div class="row padding text-left">
+      <div class="col-12">
+        <h3 class="display-4">商品ラインナップ</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--- rineup-->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-a-min.png" width="203" height="229">
+        <div class="square-p">
+          <p></p>
         </div>
-    </div>
-
-    <!--- rineup-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-a-min.png" width="203" height="229">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">LIXIL<br>シエラ I型<br>間口2550<br>スライドストッカープラン</h5>
-                    <h5 class="thema">“シンプルな使い勝手”</h5>
-                    <p>手の届きやすい中段引き出しの<br>
-                        収納量を充実。<br>
-                        普段使いの道具をたっぷり収納<br>
-                        できます。</p>
-                    <p>・スライドストッカーローラーレール<br>
-                        ・スキットシンク樹脂排水口<br>
-                        ・スレンレストップ<br>
-                        ・シングルレバー水栓<br>
-                        ・プロペラファンタイブレンジフード</p>
-                    <p>希望小売価格 ¥599,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥239,600円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-b-min.png" width="203" height="229">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">Panasonic<br>ラクシーナ I型<br>間口2550<br>シンプルプラン</h5>
-                    <h5 class="thema">“シャープなデザイン性”</h5>
-                    <p>お料理もお掃除もテキパキはかどる<br>
-                        シンプルキッチン。<br>
-                        シンプルでシャープなデザイン性と<br>
-                        使いやすさを備えています。</p>
-                    <p>・人造大理石カウンター<br>
-                        ・Gシンク76<br>
-                        ・混合水栓<br>
-                        ・ガスコンロホーロートップグリル<br>
-                        ・ブーツ型プロペラファン</p>
-                    <p>希望小売価格 ¥692,800（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥277,120円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-c-min.png" width="203" height="229">
-                <div class="square-b">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">TOTO<br>ミッテ I型<br>間口2550<br>基本プラン</h5>
-                    <h5 class="thema">“引き出し収納が充実”</h5>
-                    <p>使い勝手のよい、引き出し収納。<br>
-                        よく使うモノを上段のキャビネット<br>
-                        に収納できる「センターラインキャビ<br>
-                        ネット」を採用。</p>
-                    <p>・2段引き出し<br>
-                        ・ステンレスカウンター<br>
-                        ・スペースアップシンク<br>
-                        ・ホーロートップ片面焼きコンロH<br>
-                        ・プロペラファンフード<br>
-                    </p>
-                    <p>希望小売価格 ¥692,400（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥276,960円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-d-min.png" width="203" height="229">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">LIXIL<br>リシェル I型<br>間口2550<br>カスタムベースプラン</h5>
-                    <h5 class="thema">“らくパッと収納”</h5>
-                    <p>使用頻度が一番高いシンク下に「らく<br>
-                        パッと収納」を搭載しています。<br>
-                        よく使う道具の出し入れがスムーズに<br>
-                        できるから、ラクに調理が行えます。
-                    </p>
-                    <p>希望小売価格 ¥748,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→40%OFF ¥448,800円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-e-min.png" width="203" height="229">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">クリナップ<br>ラクエラ I型<br>間口2550<br>スライド収納・シンシアタイプ</h5>
-                    <h5 class="thema">“家具のようなキッチン”</h5>
-                    <p>リビングと楽しくコーディネイト。<br>
-                        「家具のようなキッチン」。<br>
-                        使いやすいオールスライドの<br>
-                        足下収納タイプです。
-                    </p>
-                    <p>・サイレントレール<br>
-                        ・ステンレスワークトップ<br>
-                        ・ステンレスシンク<br>
-                        ・深型レンジフード<br>
-                        ・ホーロートップコンロ
-                    </p>
-                    <p>希望小売価格 ¥634,800（税抜)<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥253,920円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-f-min.png" width="203" height="229">
-                <div class="square-b">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">LIXIL<br>アレスタ I型<br>間口2550<br>シンプルプラン グループ1</h5>
-                    <h5 class="thema">“使いやすく、美しい”</h5>
-                    <p>使い勝手のよさと、美しさ、<br>
-                        どちらもかなえるために生まれた<br>
-                        キッチン＜アレスタ＞。<br>
-                        使いやすい引き出しタイプのプラン。
-                    </p>
-                    <p>・スライドストッカー<br>
-                        ・ステンレストップ<br>
-                        ・スキットシンク<br>
-                        ・3口コンロホーロートップ<br>
-                        ・NBHプロペラファン
-                    </p>
-                    <p>希望小売価格 ¥663,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;"> →55%OFF ¥298,350円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-g-min.png" width="203" height="229">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">タカラ<br>エーデル I型<br>間口2550<br>スライドタイプ</h5>
-                    <h5 class="thema">“安心、清潔、長持ち”</h5>
-                    <p>すみずみまで高品位ホーローなので、<br>
-                        安心・清潔・長持ち。<br>
-                        飽きのこないシンプルなデザインで、<br>
-                        空間にすっきりとけ込みます。
-                    </p>
-                    <p>・ベースキャビネット扉タイプ<br>
-                        ・ステンレスワークトップ<br>
-                        ・ステンレスシンク<br>
-                        ・シングルレバー水栓<br>
-                        ・プロペラファン</p>
-                    <p><span style="color:#F5054F; font-size: 130%;">¥255,200円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/kitchen-h-min.png" width="203" height="229">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">クリナップ<br>クリンレディ I型<br>間口2550<br>シンプルプラン</h5>
-                    <h5 class="thema">“ベーシックなキッチン”</h5>
-                    <p>基本機能が凝縮された、キッチン。<br>
-                        シンクとコンロのキャビネットに、<br>
-                        フライパンを立てて入れられる<br>
-                        「うきうきポケット」を標準装備。</p>
-                    <p>希望小売価格 ¥538,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→40%OFF ¥322,800円(税抜)</span></p>
-                </div>
-            </div>
+        <div class="passage">
+          <h5 class="title">LIXIL<br>シエラ I型<br>間口2550<br>スライドストッカープラン</h5>
+          <h5 class="thema">“シンプルな使い勝手”</h5>
+          <p>手の届きやすい中段引き出しの<br>
+            収納量を充実。<br>
+            普段使いの道具をたっぷり収納<br>
+            できます。</p>
+          <p>・スライドストッカーローラーレール<br>
+            ・スキットシンク樹脂排水口<br>
+            ・スレンレストップ<br>
+            ・シングルレバー水栓<br>
+            ・プロペラファンタイブレンジフード</p>
+          <p>希望小売価格 ¥599,000（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥239,600円(税抜)</span></p>
         </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-b-min.png" width="203" height="229">
+        <div class="square-g">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">Panasonic<br>ラクシーナ I型<br>間口2550<br>シンプルプラン</h5>
+          <h5 class="thema">“シャープなデザイン性”</h5>
+          <p>お料理もお掃除もテキパキはかどる<br>
+            シンプルキッチン。<br>
+            シンプルでシャープなデザイン性と<br>
+            使いやすさを備えています。</p>
+          <p>・人造大理石カウンター<br>
+            ・Gシンク76<br>
+            ・混合水栓<br>
+            ・ガスコンロホーロートップグリル<br>
+            ・ブーツ型プロペラファン</p>
+          <p>希望小売価格 ¥692,800（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥277,120円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-c-min.png" width="203" height="229">
+        <div class="square-b">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">TOTO<br>ミッテ I型<br>間口2550<br>基本プラン</h5>
+          <h5 class="thema">“引き出し収納が充実”</h5>
+          <p>使い勝手のよい、引き出し収納。<br>
+            よく使うモノを上段のキャビネット<br>
+            に収納できる「センターラインキャビ<br>
+            ネット」を採用。</p>
+          <p>・2段引き出し<br>
+            ・ステンレスカウンター<br>
+            ・スペースアップシンク<br>
+            ・ホーロートップ片面焼きコンロH<br>
+            ・プロペラファンフード<br>
+          </p>
+          <p>希望小売価格 ¥692,400（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥276,960円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-d-min.png" width="203" height="229">
+        <div class="square-p">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">LIXIL<br>リシェル I型<br>間口2550<br>カスタムベースプラン</h5>
+          <h5 class="thema">“らくパッと収納”</h5>
+          <p>使用頻度が一番高いシンク下に「らく<br>
+            パッと収納」を搭載しています。<br>
+            よく使う道具の出し入れがスムーズに<br>
+            できるから、ラクに調理が行えます。
+          </p>
+          <p>希望小売価格 ¥748,000（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;">→40%OFF ¥448,800円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-e-min.png" width="203" height="229">
+        <div class="square-g">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">クリナップ<br>ラクエラ I型<br>間口2550<br>スライド収納・シンシアタイプ</h5>
+          <h5 class="thema">“家具のようなキッチン”</h5>
+          <p>リビングと楽しくコーディネイト。<br>
+            「家具のようなキッチン」。<br>
+            使いやすいオールスライドの<br>
+            足下収納タイプです。
+          </p>
+          <p>・サイレントレール<br>
+            ・ステンレスワークトップ<br>
+            ・ステンレスシンク<br>
+            ・深型レンジフード<br>
+            ・ホーロートップコンロ
+          </p>
+          <p>希望小売価格 ¥634,800（税抜)<br>
+            <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥253,920円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-f-min.png" width="203" height="229">
+        <div class="square-b">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">LIXIL<br>アレスタ I型<br>間口2550<br>シンプルプラン グループ1</h5>
+          <h5 class="thema">“使いやすく、美しい”</h5>
+          <p>使い勝手のよさと、美しさ、<br>
+            どちらもかなえるために生まれた<br>
+            キッチン＜アレスタ＞。<br>
+            使いやすい引き出しタイプのプラン。
+          </p>
+          <p>・スライドストッカー<br>
+            ・ステンレストップ<br>
+            ・スキットシンク<br>
+            ・3口コンロホーロートップ<br>
+            ・NBHプロペラファン
+          </p>
+          <p>希望小売価格 ¥663,000（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;"> →55%OFF ¥298,350円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-g-min.png" width="203" height="229">
+        <div class="square-p">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">タカラ<br>エーデル I型<br>間口2550<br>スライドタイプ</h5>
+          <h5 class="thema">“安心、清潔、長持ち”</h5>
+          <p>すみずみまで高品位ホーローなので、<br>
+            安心・清潔・長持ち。<br>
+            飽きのこないシンプルなデザインで、<br>
+            空間にすっきりとけ込みます。
+          </p>
+          <p>・ベースキャビネット扉タイプ<br>
+            ・ステンレスワークトップ<br>
+            ・ステンレスシンク<br>
+            ・シングルレバー水栓<br>
+            ・プロペラファン</p>
+          <p><span style="color:#F5054F; font-size: 130%;">¥255,200円(税抜)</span></p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <img src="./images/kitchen-h-min.png" width="203" height="229">
+        <div class="square-g">
+          <p></p>
+        </div>
+        <div class="passage">
+          <h5 class="title">クリナップ<br>クリンレディ I型<br>間口2550<br>シンプルプラン</h5>
+          <h5 class="thema">“ベーシックなキッチン”</h5>
+          <p>基本機能が凝縮された、キッチン。<br>
+            シンクとコンロのキャビネットに、<br>
+            フライパンを立てて入れられる<br>
+            「うきうきポケット」を標準装備。</p>
+          <p>希望小売価格 ¥538,000（税抜）<br>
+            <span style="color:#F5054F; font-size: 130%;">→40%OFF ¥322,800円(税抜)</span></p>
+        </div>
+      </div>
     </div>
+  </div>
 
 
-    <div class="attention">
-        <p>標準工事費 ￥20万～25万 </p>
-        <p>（処分費込みの価格です。組立費は別途になります。）</p>
-        <p> ※写真はイメージです。</p>
-    </div>
+  <div class="attention">
+    <p>標準工事費 ￥20万～25万 </p>
+    <p>（処分費込みの価格です。組立費は別途になります。）</p>
+    <p> ※写真はイメージです。</p>
+  </div>
 </div>
 
 <!--- Contact -->
 <div class="contact">
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-12">
-                <p>お電話またはフォームより、お気軽にお問い合わせください</p>
-                <hr class="horizon">
-            </div>
-            <div class="col-md-6">
-                <p>0120-281-258</p>
-                <p>年中無休 営業時間9:00〜18:00</p>
-            </div>
-            <div class="col-md-6">
-                <a href="mailto:kamiken@sky.plala.or.jp?subject=&amp;body="> <br>MAIL FORM</a>
-            </div>
-        </div>
+  <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="col-12">
+        <p>お電話またはフォームより、お気軽にお問い合わせください</p>
+        <hr class="horizon">
+      </div>
+      <div class="col-md-6">
+        <p>0120-281-258</p>
+        <p>年中無休 営業時間9:00〜18:00</p>
+      </div>
+      <div class="col-md-6">
+        <a href="mailto:kamiken@sky.plala.or.jp?subject=&amp;body="> <br>MAIL FORM</a>
+      </div>
     </div>
+  </div>
 </div>
 
 <!--- Two Column Section -->

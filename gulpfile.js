@@ -29,6 +29,7 @@ var src = {
   page: [source, 'pages', '*.ejs'].join('/'),
   sass: [source, 'sass', '*.sass'].join('/'),
   service: [source, 'services', '*.json'].join('/'),
+  settings: [source, 'settings', '*'].join('/'),
   allElectric: [source, 'settings', 'all-electric.json'].join('/'),
   bath: [source, 'settings', 'bath.json'].join('/'),
   craftsman: [source, 'settings', 'craftsman.json'].join('/'),
@@ -121,7 +122,9 @@ gulp.task("ejs", (done) => {
       toilet,
       voice,
       washbasin
-    }, {}, {
+    }, {
+      async: false
+    }, {
       ext: '.html'
     }))
     .pipe(rename({
@@ -134,6 +137,7 @@ gulp.task("ejs", (done) => {
 // 開発用watchタスク
 gulp.task('watch', (done) => {
   gulp.watch(src.page, gulp.task('ejs'))
+  gulp.watch(src.settings, gulp.task('ejs'))
   gulp.watch(src.sass, gulp.task('sass'))
   gulp.watch(src.image, gulp.task('image'))
   gulp.watch(src.js, gulp.task('js'))
