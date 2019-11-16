@@ -5,235 +5,61 @@
 %>
 
 
-<!--- Image Slider -->
-<div class="carousel-inner">
-    <img src="./images/bath-top-min.png">
-    <div class="carousel-caption">
-        <h1>Bath Reform</h1>
+<section class="section is-paddingless">
+  <div class="container is-paddingless">
+    <div class="columns">
+      <div class="column">
+        <img src="images/bath-fv.jpg" width="100%">
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
-<!--- Jumbotron -->
-<div class="lead">
-    <div class="content">
-        <h2>“リフォームのことなら上里建設へ”</h2>
-    </div>
-</div>
+<section class="section">
+  <div class="container is-fluid">
+    <h1 class="title is-3"><span class="underline-gray">商品ラインナップ</span></h1>
+    <div class="columns is-multiline">
+      <% for (key in bath['items']) { %>
+      <% if(bath['items'][key].visible) { %>
+      <div class="column has-text-centered">
 
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <img src="<%= bath['items'][key].product_image %>" alt="<%= bath['items'][key].product_image_description %>"
+              width="200" />
+          </div>
 
-<!--- service title-->
-<div class="page">
+          <div class="column is-12">
+            <p class="has-text-left">
+              <span class="has-text-weight-bold">
+                <%= bath['items'][key].manufacturer + ' ' + bath['items'][key].series %>
+              </span>
+            </p>
+            <p class="has-text-left">
+              <%= bath['items'][key].description %>
+            </p>
+          </div>
 
-    <div class="container-fluid padding">
-        <div class="row padding text-left">
-            <div class="col-12">
-                <h3 class="display-4">商品ラインナップ</h3>
-            </div>
-        </div>
-    </div>
+          <div class="column is-12">
+            <p class="is-size-6">
+              希望小売価格 ￥<%= bath['items'][key].retail_price.toLocaleString() %>円
+            </p>
+            <p class="is-size-4">
+              <span class="underline-red">
+                ￥<%= bath['items'][key].price.toLocaleString() %>円
+              </span>
+            </p>
+          </div>
 
-    <!--- rineup-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/bath-a-min.png" width="200" height="200">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">LIXIL<br>アライズ<br>1216（0.75坪）/1616（1坪)<br>Cタイプ</h5>
-                    <h5 class="thema">“心地いいを求めたバスルーム”</h5>
-                    <p>人がお風呂に求める”心地いい”という<br>
-                        瞬間のために進化したバスルーム。</p>
-                    <p>汚れにくく清掃性に優れたクランク<br>
-                        レス水栓＜ホワイト＞が標準仕様。</p>
-                    <p>シンプル装備のカウンターレス<br>
-                        タイプです。
-                    </p>
-                    <p>・クランクレス水栓<br>
-                        ・エコフルシャワー＜ホワイト＞<br>
-                        ・くるりんポイ排水口<br>
-                        ・天井換気扇<br>
-                        ・キレイドア<br>
-                        ・ネオサークル照明＜LEDランプ＞<br>
-                        ・タオル掛</p>
-                    <br>
-                    <p>【1216タイプ】<br>
-                        希望小売価格 ¥635,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→65%OFF ¥222,250円(税抜)</span></p>
-                    <p>【1616タイプ】<br>
-                        希望小売価格 ¥695,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→65%OFF ¥243,250円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/bath-b-min.png" width="200" height="200">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">TOTO<br>
-                        サザナ<br>
-                        1216（0.75坪）/1616（1坪）<br>
-                        Nタイプ</h5>
-                    <h5 class="thema">“安心なユニバーサルデザイン”</h5>
-                    <p>段差のない出入口・腰掛けスペース・<br>
-                        つかみやすい浴槽のフチ・またぎ<br>
-                        やすい浴槽の高さ・手すり・洗面器<br>
-                        置台カウンターなど、安心して使える<br>
-                        ユニバーサルデザイン。
-                    </p>
-                    <p>・スッキリ水栓<br>
-                        ・ラウンド浴槽<br>
-                        ・カラリ床<br>
-                        ・お掃除ラクラク排水口<br>
-                        ・コンフォートウエーブシャワー<br>
-                        ・お掃除ラクラクカウンター<br>
-                        ・お掃除ラクラク鏡 縦長ミラー<br>
-                        ・収納棚2段<br>
-                        ・スッキリドア折戸</p>
-                    <p>【1216タイプ】<br>
-                        希望小売価格 ¥616,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥246,400円(税抜)</span></p>
-                    【1616タイプ】<br>
-                    希望小売価格 ¥686,000（税抜）<br>
-                    <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥274,400円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/bath-c-min.png" width="200" height="200">
-                <div class="square-b">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">クリナップ<br>
-                        ユアシス<br>
-                        1216（0.75坪）/1616（1坪）<br>
-                        ライトプラン</h5>
-                    <h5 class="thema">“シンプルでクリーンなお風呂”</h5>
-                    <p>シンプルでクリーンな印象のバスルーム。</P>
-                    <p>いつも清潔に保てるように、毎日の清掃の<br>
-                        しやすさにこだわりました。</p>
-
-                    <p>・FRP浴槽＜保温＞<br>
-                        ・足ピタフロア<br>
-                        ・断熱組フタ<br>
-                        ・壁付照明LED<br>
-                        ・とってもクリンカウンター<br>
-                        ・壁出しホワイト水栓<br>
-                        ・天井付け換気扇
-                    </p>
-                    <p>【1216タイプ】<br>
-                        希望小売価格 ¥697,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥278,800円(税抜)</span></p>
-                    【1616タイプ】<br>
-                    希望小売価格 ¥757,000（税抜）<br>
-                    <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥302,800円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/bath-d-min.png" width="200" height="200">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">タカラ<br>
-                        ミーナ<br>
-                        1216（0.75坪）/1616（1坪）<br>
-                        Pタイプ</h5>
-                    <h5 class="thema">“お手入れのしやすい浴室”</h5>
-                    <p>浴槽素材はもちろんのこと、浴室 <br>
-                        パネルや洗い場なども、充分な <br>
-                        耐久性を持つお手入れのしやすい <br>
-                        浴室素材から厳選しました。
-                    </p>
-                    <p>・FRP浴槽<br>
-                        ・樹脂製ワイドカウンター<br>
-                        ・ホーロークリーンパネル<br>
-                        ・サーモ水栓<br>
-                        ・天井付ミニ照明<br>
-                        ・天井換気扇<br>
-                    </p>
-                    <p>【1216タイプ】<br>
-                        <span style="color:#F5054F; font-size: 130%;">¥261,000円(税抜)</span></p>
-                    【1616タイプ】<br>
-                    <span style="color:#F5054F; font-size: 130%;">¥284,250円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/bath-e-min.png" width="200" height="200">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">Panasonic<br>
-                        バスルームFZ<br>
-                        1216（0.75坪）/1616（1坪）<br>
-                        ベースタイプ</h5>
-                    <h5 class="thema">“キレイを保ちやすい”</h5>
-                    <p>浴室全体をキレイに保ちやすいこと、 <br>
-                        お湯そのものがもたらす快適さ、 <br>
-                        使い心地のいい様々なアイテム。</p>
-                    <p>工夫に工夫を重ねながらバスルームの <br>
-                        心地よさを考え抜きました。
-                    </p>
-                    <p>・スミピカフロア<br>
-                        ・ささっと排水口仕様<br>
-                        ・FRP浴槽<br>
-                        ・巻きフタ<br>
-                        ・換気扇<br>
-                        ・サークルLED照明2灯<br>
-                        ・スキットドア<br>
-                        ・シンプルミラー<br>
-                        ・ライトシェルフ2段<br>
-                        ・オーバルカウンター<br>
-                        ・ストレート壁付水栓<br>
-                        ・タオル掛けA<br>
-                    </p>
-                    <p>【1216タイプ】<br>
-                        <span style="color:#F5054F; font-size: 130%;">希望小売価格 ¥557,000（税抜）</span></p>
-                    →60%OFF ¥222,800円(税抜)
-                    【1616タイプ】<br>
-                    希望小売価格 ¥627,000（税抜）<br>
-                    <span style="color:#F5054F; font-size: 130%;">→60%OFF ¥250,800円(税抜)</span></p>
-                </div>
-            </div>
+          <hr>
 
         </div>
+      </div>
+      <% } %>
+      <% } %>
     </div>
 
+  </div>
+</section>
 
-    <div class="attention">
-        <p>標準工事費 ￥25万～30万</p>
-        <p>（処分費込みの価格です。組立費は別途になります。）</p>
-        <p>※写真はイメージです。</p>
-    </div>
-</div>
-
-<!--- Contact -->
-<div class="contact">
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-12">
-                <p>お電話またはフォームより、お気軽にお問い合わせください</p>
-                <hr class="horizon">
-            </div>
-            <div class="col-md-6">
-                <p>0120-281-258</p>
-                <p>年中無休 営業時間9:00〜18:00</p>
-            </div>
-            <div class="col-md-6">
-                <a href="mailto:kamiken@sky.plala.or.jp?subject=&amp;body="> <br>MAIL FORM</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- Two Column Section -->
-
-<!--- Footer -->
 <% include ../components/_footer %>
-
-</body>
-
-</html>
