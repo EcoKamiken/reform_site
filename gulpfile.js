@@ -138,6 +138,7 @@ gulp.task("ejs", (done) => {
 gulp.task('watch', (done) => {
   gulp.watch(src.page, gulp.task('ejs'))
   gulp.watch(src.settings, gulp.task('ejs'))
+  gulp.watch(src.component, gulp.task('ejs'))
   gulp.watch(src.sass, gulp.task('sass'))
   gulp.watch(src.image, gulp.task('image'))
   gulp.watch(src.js, gulp.task('js'))
