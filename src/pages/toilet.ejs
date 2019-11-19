@@ -5,123 +5,61 @@
 %>
 
 
-<!--- Image Slider -->
-<div class="carousel-inner">
-    <img src="./images/toilet-top-min.png">
-    <div class="carousel-caption">
-        <h1>toilet Reform</h1>
+<section class="section is-paddingless">
+  <div class="container is-paddingless">
+    <div class="columns">
+      <div class="column">
+        <img src="images/toilet-fv.jpg" width="100%">
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
-<!--- Jumbotron -->
-<div class="lead">
-    <div class="content">
-        <h2>“リフォームのことなら上里建設へ”</h2>
-    </div>
-</div>
+<section class="section">
+  <div class="container is-fluid">
+    <h1 class="title is-3"><span class="underline-gray">商品ラインナップ</span></h1>
+    <div class="columns is-multiline">
+      <% for (key in toilet['items']) { %>
+      <% if(toilet['items'][key].visible) { %>
+      <div class="column has-text-centered">
 
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <img src="<%= toilet['items'][key].product_image %>"
+              alt="<%= toilet['items'][key].product_image_description %>" width="200" />
+          </div>
 
-<!--- service title-->
-<div class="page">
+          <div class="column is-12">
+            <p class="has-text-left">
+              <span class="has-text-weight-bold">
+                <%= toilet['items'][key].manufacturer + ' ' + toilet['items'][key].series %>
+              </span>
+            </p>
+            <p class="has-text-left">
+              <%= toilet['items'][key].description %>
+            </p>
+          </div>
 
-    <div class="container-fluid padding">
-        <div class="row padding text-left">
-            <div class="col-12">
-                <h3 class="display-4">商品ラインナップ</h3>
-            </div>
+          <div class="column is-12">
+            <p class="is-size-6">
+              希望小売価格 ￥<%= toilet['items'][key].retail_price.toLocaleString() %>円
+            </p>
+            <p class="is-size-4">
+              <span class="underline-red">
+                ￥<%= toilet['items'][key].price.toLocaleString() %>円
+              </span>
+            </p>
+          </div>
+
+          <hr>
+
         </div>
+      </div>
+      <% } %>
+      <% } %>
     </div>
 
-    <!--- rineup-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/toilet-a-min.png" width="222" height="210">
-                <div class="square-p">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">カミケン<br>オリジナルトイレ</h5>
-                    <p>・ウォシュレット<br>
-                        ・リモコン<br>
-                        ・お買得タイプ</p>
-                    <p><span style="color:#F5054F; font-size: 130%;">¥222,250円(税込)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/toilet-b-min.png" width="222" height="210">
-                <div class="square-g">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">LIXIL<br>アメージュ ZA</h5>
-                    <p>・節水トイレ<br>
-                        ・手洗いなし<br>
-                        ・シャワートイレ<br>
-                        ・フチレス形状<br>
-                        ・床排水</p>
-                    <p>希望小売価格 ¥209,700（税抜)<br>
-                        <span style="color:#F5054F; font-size: 130%;">→40%OFF ¥125,820円(税抜)</span></p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <img src="./images/toilet-c-min.png" width="222" height="210">
-                <div class="square-b">
-                    <p></p>
-                </div>
-                <div class="passage">
-                    <h5 class="title">Panasonic<br>
-                        アラウーノ<br>
-                        専用トワレS5</h5>
-                    <p>・手洗いなし<br>
-                        ・暖房便座<br>
-                        ・おまかせ節電
-                    </p>
-                    <p>希望小売価格 ¥164,000（税抜）<br>
-                        <span style="color:#F5054F; font-size: 130%;">→35%OFF ¥106,600円(税抜)</span></p>
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
+</section>
 
-
-
-
-
-    <div class="attention">
-        <p>標準工事費 ￥25,000～ （処分費込みの価格です。
-            「和式→洋式」はお電話にてお問い合わせください。）<br>
-            ※写真はイメージです。</p>
-    </div>
-
-</div>
-
-
-
-<!--- Contact -->
-<div class="contact">
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-12">
-                <p>お電話またはフォームより、お気軽にお問い合わせください</p>
-                <hr class="horizon">
-            </div>
-            <div class="col-md-6">
-                <p>0120-281-258</p>
-                <p>年中無休 営業時間9:00〜18:00</p>
-            </div>
-            <div class="col-md-6">
-                <a href="mailto:kamiken@sky.plala.or.jp?subject=&amp;body="> <br>MAIL FORM</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--- Two Column Section -->
-
-<!--- Footer -->
 <% include ../components/_footer %>
-
-</body>
-
-</html>

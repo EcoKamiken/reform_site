@@ -80,7 +80,6 @@ gulp.task('sass', (done) => {
 // imagesコピー
 gulp.task('image', (done) => {
   gulp.src(src.image)
-    .pipe(changed(dist.image))
     .pipe(gulp.dest(dist.image))
   done()
 })
@@ -88,7 +87,6 @@ gulp.task('image', (done) => {
 // jsコピー
 gulp.task('js', (done) => {
   gulp.src(src.js)
-    .pipe(changed(dist.js))
     .pipe(gulp.dest(dist.js))
   done()
 })
@@ -137,6 +135,8 @@ gulp.task("ejs", (done) => {
 // 開発用watchタスク
 gulp.task('watch', (done) => {
   gulp.watch(src.page, gulp.task('ejs'))
+  gulp.watch(src.settings, gulp.task('ejs'))
+  gulp.watch(src.component, gulp.task('ejs'))
   gulp.watch(src.settings, gulp.task('ejs'))
   gulp.watch(src.sass, gulp.task('sass'))
   gulp.watch(src.image, gulp.task('image'))

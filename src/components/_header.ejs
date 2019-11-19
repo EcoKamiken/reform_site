@@ -14,7 +14,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=360, initial-scale=1">
   <title><%= page['title'] %></title>
   <meta name="description" content="<%= page['description'] %>">
   <link rel="stylesheet" href="css/main.css">
@@ -46,25 +46,73 @@
               <a class="navbar-item" href="<%= rootName %>">
                 トップ
               </a>
-              <a class="navbar-item" href="<%= rootName %>#service">
-                サービス
-              </a>
-              <a class="navbar-item" href="<%= rootName %>#staff">
-                スタッフ
-              </a>
-              <a class="navbar-item" href="<%= rootName %>#voice">
-                お客様の声
-              </a>
+
+              <div class="navbar-item has-dropdown is-hoverable">
+
+                <a class="navbar-item" href="<%= rootName %>#service">
+                  サービス
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="<%= rootName %>/kitchen.html">
+                    キッチン
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/bath.html">
+                    お風呂
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/washbasin.html">
+                    洗面台
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/all-electric.html">
+                    オール電化
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/flow.html">
+                    リフォームの流れ
+                  </a>
+                </div><!-- navbar-dropdown-->
+              </div><!-- navbar-item -->
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="<%= rootName %>#staff">
+                  スタッフ
+                </a>
+
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="<%= rootName %>/staff.html">
+                    スタッフ
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/craftsman.html">
+                    職人
+                  </a>
+                </div>
+              </div><!-- navbar-item -->
+
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-item" href="<%= rootName %>#voice">
+                  お客様の声
+                </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="<%= rootName %>/voice.html">
+                    お客様の声
+                  </a>
+                  <a class="navbar-item" href="<%= rootName %>/q&a.html">
+                    Q&A
+                  </a>
+                </div>
+              </div><!-- navbar-item -->
+
             </div>
+
             <div class="navbar-end">
               <div class="navbar-item">
                 <div class="buttons">
                   <a class="button is-primary" href="//kamiken.info/inquiry">お問い合わせ</a>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- navbar-end -->
+
+          </div><!-- navbarBasic -->
         </nav>
       </header>
-    </div>
+    </div><!-- container -->
   </section>

@@ -4,280 +4,62 @@
   })
 %>
 
-<!--- Image Slider -->
-<div class="carousel-inner">
-  <img src="./images/allelectric-top-min.png">
-  <div class="carousel-caption">
-    <h1>all electric Reform</h1>
-  </div>
-</div>
 
-<!--- Jumbotron -->
-<div class="lead">
-  <div class="content">
-    <h2>“リフォームのことなら上里建設へ”</h2>
-  </div>
-</div>
-
-
-<div class="page">
-
-  <!--- ih-->
-  <div class="IH">
-
-    <!--- service title-->
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h2>IHクッキングヒーター</h2>
-        </div>
-      </div>
-    </div>
-
-    <!--- point-->
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h3 class="display-4">ポイント</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid padding">
-      <div class="row padding">
-        <div class="col-md-4 col-lg-4">
-          <img src="./images/fire-min.png" width="130" height="130" />
-          <div class="square-p">
-            <p></p>
-          </div>
-          <div class="passage">
-            <h5 class="title">高火力</h5>
-            <h5 class="thema">“強火が決め手の料理も<br>
-              美味しく出来上がります”</h5>
-            <p>IHの強火は、お料理自慢の奥様<br>
-              にも大好評です。</p>
-            <p>200Vのハイパワーと高い<br>
-              熱効率により、ハイパワーの<br>
-              ガスコンロ並の高火力を発揮。</p>
-            <p>強火が決め手のステーキや<br>
-              中華料理も一味上のおいしさ<br>
-              で、パスタの湯わかしも<br>
-              スピーディーです。</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4">
-          <img src="./images/coin-min.png" width="130" height="130">
-          <div class="square-g">
-            <p></p>
-          </div>
-          <div class="passage">
-            <h5 class="title">経済力</h5>
-            <h5 class="thema">“加熱ロスが少なく<br>
-              待機消費電力もゼロ”</h5>
-            <p>鍋底が発熱するので加熱ロスが<br>
-              少なくすみます。</p>
-            <p>待機時消費電力もゼロなので、<br>
-              家計に優しい電気代でご使用<br>
-              いただけます。</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4">
-          <img src="./images/shield-min.png" width="130" height="130">
-          <div class="square-b">
-            <p></p>
-          </div>
-          <div class="passage">
-            <h5 class="title">安全</h5>
-            <h5 class="thema">“安全装置も<br>
-              充実しています” </h5>
-            <p>IHクッキンヒーターは火を使わず<br>
-              鍋自体を発熱させます。</p>
-            <p>直火の引火や吹きこぼれた時の<br>
-              立ち消えの心配がありません。</p>
-            <p>さらに空焼き自動OFFや切り忘れ<br>
-              防止などあります。</p>
-            <p>「ついうっかり」を防ぐIHならでは<br>
-              の安全機能も充実しています。</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!--- service-->
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h3 class="display-4">商 品</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="container-fluid padding">
-        <div class="row padding text-center">
-          <div class="col-md-4">
-            <br>
-            <p>"おまかせグリル"</p>
-            <p>"火力に応じて明るさが<br>
-              変化する光るリング"</p>
-          </div>
-          <div class="col-md-4">
-            <img class="ih-img-top" src="./images/ih-min.png" width="201" height="150">
-          </div>
-          <div class="col-md-4">
-            <br>
-            <p>Panasonic</p>
-            <p>IHクッキングヒーター</p>
-            <p>希望小売価格 ¥244,000（税抜）<br>
-              <span style="color:#F5054F; font-size: 110%;">→55%OFF ¥109,800円(税抜)</span></p>
-          </div>
-        </div>
+<section class="section is-paddingless">
+  <div class="container is-paddingless">
+    <div class="columns">
+      <div class="column">
+        <img src="images/allElectric-fv.jpg" width="100%">
       </div>
     </div>
   </div>
+</section>
 
-  <!--- ecocute-->
-  <div class="ecocute">
+<section class="section">
+  <div class="container is-fluid">
+    <h1 class="title is-3"><span class="underline-gray">商品ラインナップ</span></h1>
+    <div class="columns is-multiline">
+      <% for (key in allElectric['items']) { %>
+      <% if(allElectric['items'][key].visible) { %>
+      <div class="column has-text-centered">
 
-    <!--- service title-->
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h2>エコキュート</h2>
-        </div>
-      </div>
-    </div>
-
-    <!--- point-->
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h3 class="display-4">ポイント</h3>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid padding">
-      <div class="row padding">
-        <div class="col-md-4 col-lg-4">
-          <img src="./images/half-moon-min.png" width="130" height="130">
-          <div class="square-p">
-            <p></p>
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <img src="<%= allElectric['items'][key].product_image %>"
+              alt="<%= allElectric['items'][key].product_image_description %>" width="200" />
           </div>
-          <div class="passage">
-            <h5 class="title">深夜がお得</h5>
-            <h5 class="thema">“お得な深夜料金で<br>
-              効率的に湯沸かし”</h5>
-            <p>深夜料金は約70%ダウンなので<br>
-              お得に利用することができます。</p>
-            <p>「給油」に使用するエネルギーは<br>
-              家庭での消費エネルギーの<br>
-              約30%を占めています。</p>
-            <p>よって、夜間電力の使用は大幅<br>
-              な光熱費の削減になります。</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-4">
-          <img src="./images/save-min.png" width="130" height="130">
-          <div class="square-g">
-            <p></p>
-          </div>
-          <div class="passage">
-            <h5 class="title">環境にやさしい</h5>
-            <h5 class="thema">“加熱ロスが少なく<br>
-              待機消費電力もゼロ”</h5>
-            <p>大気中から熱を吸収してお湯を<br>
-              つくるエコキュートは、空気中に<br>
-              存在する二酸化炭素「CO2<br>
-              冷媒」を利用しています。</p>
-            <p>地球上に存在する安全で無害<br>
-              な物質を利用してお湯をつくる、<br>
-              それがエコキュートです。</p>
-          </div>
-        </div>
 
-      </div>
-    </div>
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h3 class="display-4">仕組み</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="construction-img">
-      <img class="construction" src="./images/construction-min.png" width="586" height="364">
-    </div>
-
-
-    <div class="container-fluid padding">
-      <div class="row padding text-left">
-        <div class="col-12">
-          <h3 class="display-4">商 品</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="product">
-      <div class="container-fluid padding">
-        <div class="row padding text-center">
-          <div class="col-md-4">
-            <p>“自動お湯はり”</p>
-            <p>“追いだき”</p>
-            <p> “高温さし湯” </p>
-            <p>“湯量設定オモード”</p>
-          </div>
-          <div class="col-md-4">
-            <img src="./images/ecocute-min.png" width="243" height="274">
-          </div>
-          <div class="col-md-4">
-            <p>Panasonic</p>
-            <p>IHクッキングヒーター</p>
-            <p> 希望小売価格 ¥244,000（税抜）<br>
-              <span style="color:#F5054F; font-size: 110%;">→55%OFF ¥109,800円(税抜)</span>
+          <div class="column is-12">
+            <p class="has-text-left">
+              <span class="has-text-weight-bold">
+                <%= allElectric['items'][key].manufacturer + ' ' + allElectric['items'][key].series %>
+              </span>
+            </p>
+            <p class="has-text-left">
+              <%= allElectric['items'][key].description %>
             </p>
           </div>
+
+          <div class="column is-12">
+            <p class="is-size-6">
+              希望小売価格 ￥<%= allElectric['items'][key].retail_price.toLocaleString() %>円
+            </p>
+            <p class="is-size-4">
+              <span class="underline-red">
+                ￥<%= allElectric['items'][key].price.toLocaleString() %>円
+              </span>
+            </p>
+          </div>
+
+          <hr>
+
         </div>
       </div>
+      <% } %>
+      <% } %>
     </div>
+
   </div>
-</div>
+</section>
 
-
-<!--- Contact -->
-<div class="contact">
-  <div class="container-fluid padding">
-    <div class="row text-center">
-      <div class="col-12">
-        <p>お電話またはフォームより、お気軽にお問い合わせください</p>
-        <hr class="horizon">
-      </div>
-      <div class="col-md-6">
-        <p>0120-281-258</p>
-        <p>年中無休 営業時間9:00〜18:00</p>
-      </div>
-      <div class="col-md-6">
-        <a href="mailto:kamiken@sky.plala.or.jp?subject=&amp;body="> <br>MAIL FORM</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--- Two Column Section -->
-
-<!--- Footer -->
 <% include ../components/_footer %>
-
-</body>
-
-</html>
