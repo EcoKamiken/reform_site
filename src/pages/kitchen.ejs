@@ -46,7 +46,9 @@
 
           <div class="column is-12">
             <p class="is-size-6">
+              <% if(kitchen['items'][key].retail_price != 0) { %>
               希望小売価格 ￥<%= kitchen['items'][key].retail_price.toLocaleString() %>円
+              <% } %>
             </p>
             <p class="is-size-4">
               <span class="underline-red">
