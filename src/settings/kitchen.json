@@ -1,19 +1,5 @@
 {
-    "items": [{
-            "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
-        },
+    "items": [
         {
             "visible": true,
             "id": 1,
@@ -21,43 +7,134 @@
             "manufacturer_image": "images/manufacturers/lixil.jpg",
             "manufacturer_image_description": "LIXIL",
             "series": "シエラ",
-            "size": [2550],
+            "size": [
+                2550
+            ],
             "model": "I型",
             "retail_price": 599000,
             "price": 239600,
             "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
+            "product_image": "images/kitchen/1.jpg",
             "product_image_description": "LIXIL シエラi型"
         },
         {
             "visible": true,
-            "id": 1,
+            "id": 2,
             "manufacturer": "LIXIL",
             "manufacturer_image": "images/manufacturers/lixil.jpg",
             "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
+            "series": "リシェル",
+            "size": [
+                2550
+            ],
             "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "retail_price": 748800,
+            "price": 448800,
+            "description": "使用頻度が一番高いシンク下に「らくパッと収納」を搭載したパッケージです。よく使う道具の出し入れがスムーズにできるから、ラクに調理が行えます。",
+            "product_image": "images/kitchen/2.jpg",
+            "product_image_description": "LIXIL リシェルi型"
         },
         {
             "visible": true,
-            "id": 1,
+            "id": 3,
             "manufacturer": "LIXIL",
             "manufacturer_image": "images/manufacturers/lixil.jpg",
             "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
+            "series": "アレスタ",
+            "size": [
+                2550
+            ],
             "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "retail_price": 663000,
+            "price": 298350,
+            "description": "使い勝手のよさと美しさどちらもかなえるために生まれたキッチン<アレスタ>。使いやすい引き出しタイプのプランです。",
+            "product_image": "images/kitchen/3.jpg",
+            "product_image_description": "LIXIL アレスタi型"
+        },
+        {
+            "visible": true,
+            "id": 4,
+            "manufacturer": "Panasonic",
+            "manufacturer_image": "images/manufacturers/panasonic.jpg",
+            "manufacturer_image_description": "Panasonic",
+            "series": "ラクシーナ",
+            "size": [
+                2550
+            ],
+            "model": "I型",
+            "retail_price": 692800,
+            "price": 277120,
+            "description": "お料理もお掃除もテキパキはかどるシンプルキッチン。シンプルでシャープなデザイン性と使いやすさを備えています。",
+            "product_image": "images/kitchen/4.jpg",
+            "product_image_description": "Panasonic ラクシーナi型"
+        },
+        {
+            "visible": true,
+            "id": 5,
+            "manufacturer": "クリナップ",
+            "manufacturer_image": "images/manufacturers/cleanup.jpg",
+            "manufacturer_image_description": "cleanup",
+            "series": "クリンレディ",
+            "size": [
+                2550
+            ],
+            "model": "I型",
+            "retail_price": 538000,
+            "price": 322800,
+            "description": "基本機能が凝縮された、ベーシックなI型キッチン。シンクとコンロのキャビネットにフライパンを立てて入れられる「うきうきポケット」を標準装備しています。",
+            "product_image": "images/kitchen/5.jpg",
+            "product_image_description": "クリナップ クリンレディi型"
+        },
+        {
+            "visible": true,
+            "id": 6,
+            "manufacturer": "クリナップ",
+            "manufacturer_image": "images/manufacturers/cleanup.jpg",
+            "manufacturer_image_description": "cleanup",
+            "series": "ラクエラ",
+            "size": [
+                2550
+            ],
+            "model": "I型",
+            "retail_price": 634800,
+            "price": 253920,
+            "description": "リビングと楽しくコーディネート。「家具のようなキッチン」。使いやすいオールスライドの足下収納。",
+            "product_image": "images/kitchen/6.jpg",
+            "product_image_description": "クリナップ ラクエラi型"
+        },
+        {
+            "visible": true,
+            "id": 7,
+            "manufacturer": "TOTO",
+            "manufacturer_image": "images/manufacturers/toto.jpg",
+            "manufacturer_image_description": "toto",
+            "series": "ミッテ",
+            "size": [
+                2550
+            ],
+            "model": "I型",
+            "retail_price": 692400,
+            "price": 276960,
+            "description": "使い勝手の良い、引出し収納プランです。よく使うモノを冗談のキャビネットにすべて収納できる「センターラインキャビネット」を採用。",
+            "product_image": "images/kitchen/7.jpg",
+            "product_image_description": "TOTO ミッテi型"
+        },
+        {
+            "visible": true,
+            "id": 8,
+            "manufacturer": "Takara standard",
+            "manufacturer_image": "images/manufacturers/takara_standard.jpg",
+            "manufacturer_image_description": "Takara standard",
+            "series": "エーデル",
+            "size": [
+                2550
+            ],
+            "model": "I型",
+            "retail_price": 0,
+            "price": 255200,
+            "description": "すみずみまで高品位ホーローなので、安心・清潔・長持ち。秋の来ないシンプルなデザインで空間にすっきりとけ込みます。",
+            "product_image": "images/kitchen/1.jpg",
+            "product_image_description": "Takara standard エーデルi型"
         }
     ]
 }
