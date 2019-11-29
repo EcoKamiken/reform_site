@@ -22,7 +22,7 @@
             ],
             "description": "人がお風呂に求める\"心地いい\"という瞬間のために進化したバスルーム。標準仕様は汚れにくさを清掃性に優れたクランクレス水栓<ホワイト>。シンプル装備のカウンターレスタイプです。",
             "product_image": "images/bath/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "product_image_description": "アライズ"
         },
         {
             "visible": true,
@@ -45,8 +45,8 @@
                 274400
             ],
             "description": "段差のない出入口・腰掛けスペース・つかみやすい浴槽のフチ、またぎやすい浴槽の高さ・手すり・洗面器置台カウンターなど、安心して使えるユニバーサルデザイン。",
-            "product_image": "images/bath/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "product_image": "images/bath/2.jpg",
+            "product_image_description": "サザナ"
         },
         {
             "visible": true,
@@ -69,8 +69,8 @@
                 302800
             ],
             "description": "シンプルでクリーンな印象のバスルーム。いつも清潔に保てるように、毎日の清掃のしやすさにこだわりました。",
-            "product_image": "images/bath/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "product_image": "images/bath/3.jpg",
+            "product_image_description": "ユアシス"
         },
         {
             "visible": true,
@@ -93,8 +93,8 @@
                 284250
             ],
             "description": "浴槽素材はもちろんのこと、浴室パネルや洗い場なども、十分な耐久性を持つお手入れのしやすい浴室素材から厳選しました。",
-            "product_image": "images/bath/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "product_image": "images/bath/4.jpg",
+            "product_image_description": "ミーナ"
         },
         {
             "visible": true,
@@ -117,8 +117,8 @@
                 250800
             ],
             "description": "浴室全体をキレイに保ちやすいこと、お湯そのものがもたらす快適さ、使い心地のいい様々なアイテム。工夫に工夫を重ねながらバスルームの心地よさを考え抜きました。",
-            "product_image": "images/bath/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "product_image": "images/bath/5.jpg",
+            "product_image_description": "バスルームFZ"
         }
     ]
 }
