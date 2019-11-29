@@ -5,6 +5,7 @@
 %>
 
 
+<!--
 <section class="section is-paddingless">
   <div class="container is-paddingless">
     <div class="columns">
@@ -14,6 +15,7 @@
     </div>
   </div>
 </section>
+-->
 
 <section class="section">
   <div class="container is-fluid">
@@ -21,7 +23,7 @@
     <div class="columns is-multiline">
       <% for (key in bath['items']) { %>
       <% if(bath['items'][key].visible) { %>
-      <div class="column has-text-centered">
+      <div class="column is-4 has-text-centered">
 
         <div class="columns is-multiline">
           <div class="column is-12">
@@ -41,12 +43,33 @@
           </div>
 
           <div class="column is-12">
+            <p>1216 | 0.75坪サイズ</p>
+            <!--
+            <% if(bath['items'][key].retail_price[0] != 0) { %>
             <p class="is-size-6">
-              希望小売価格 ￥<%= bath['items'][key].retail_price.toLocaleString() %>円
+              希望小売価格 ￥<%= bath['items'][key].retail_price[0].toLocaleString() %>円
             </p>
+            <% } %>
+            -->
             <p class="is-size-4">
               <span class="underline-red">
-                ￥<%= bath['items'][key].price.toLocaleString() %>円
+                ￥<%= bath['items'][key].price[0].toLocaleString() %>円
+              </span>
+            </p>
+          </div>
+
+          <div class="column is-12">
+            <p>1616 | 1坪サイズ</p>
+            <!--
+            <% if(bath['items'][key].retail_price[1] != 0) { %>
+            <p class="is-size-6">
+              希望小売価格 ￥<%= bath['items'][key].retail_price[1].toLocaleString() %>円
+            </p>
+            <% } %>
+            -->
+            <p class="is-size-4">
+              <span class="underline-red">
+                ￥<%= bath['items'][key].price[1].toLocaleString() %>円
               </span>
             </p>
           </div>
