@@ -1,63 +1,55 @@
 {
-    "items": [{
-            "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
-        },
+    "items": [
         {
             "visible": true,
             "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "manufacturer": "",
+            "manufacturer_image": "",
+            "manufacturer_image_description": "",
+            "series": "オリジナルトイレ",
+            "size": [
+                0
+            ],
+            "model": "オリジナル",
+            "retail_price": 0,
+            "price": 87000,
+            "description": "ウォシュレット・リモコン・お買い得タイプ",
+            "product_image": "images/toilet/1.jpg",
+            "product_image_description": "オリジナル"
         },
         {
             "visible": true,
-            "id": 1,
+            "id": 2,
             "manufacturer": "LIXIL",
             "manufacturer_image": "images/manufacturers/lixil.jpg",
             "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "series": "アメージュZA",
+            "size": [
+                0
+            ],
+            "model": "",
+            "retail_price": 209700,
+            "price": 125820,
+            "description": "手洗いなし・シャワートイレ・フチレス形状・床排水",
+            "product_image": "images/toilet/2.jpg",
+            "product_image_description": "アメージュZA"
         },
         {
             "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "id": 3,
+            "manufacturer": "Panasonic",
+            "manufacturer_image": "images/manufacturers/panasonic.jpg",
+            "manufacturer_image_description": "Panasonic",
+            "series": "アラウーノ専用トワレS5",
+            "size": [
+                0
+            ],
+            "model": "",
+            "retail_price": 209700,
+            "price": 125820,
+            "description": "手洗いなし・暖房便座・おまかせ節電",
+            "product_image": "images/toilet/3.jpg",
+            "product_image_description": "アラウーノ"
         }
     ]
 }

@@ -1,64 +1,124 @@
 {
-    "items": [{
-            "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
-        },
+    "items": [
         {
             "visible": true,
             "id": 1,
             "manufacturer": "LIXIL",
             "manufacturer_image": "images/manufacturers/lixil.jpg",
             "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "series": "アライズ",
+            "size": [
+                1216,
+                1616
+            ],
+            "model": "Cタイプ",
+            "retail_price": [
+                635000,
+                695000
+            ],
+            "price": [
+                222250,
+                243250
+            ],
+            "description": "人がお風呂に求める\"心地いい\"という瞬間のために進化したバスルーム。標準仕様は汚れにくさを清掃性に優れたクランクレス水栓<ホワイト>。シンプル装備のカウンターレスタイプです。",
+            "product_image": "images/bath/1.jpg",
+            "product_image_description": "アライズ"
         },
         {
             "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "id": 2,
+            "manufacturer": "TOTO",
+            "manufacturer_image": "images/manufacturers/toto.jpg",
+            "manufacturer_image_description": "TOTO",
+            "series": "サザナ",
+            "size": [
+                1216,
+                1616
+            ],
+            "model": "Nタイプ",
+            "retail_price": [
+                616000,
+                686000
+            ],
+            "price": [
+                246400,
+                274400
+            ],
+            "description": "段差のない出入口・腰掛けスペース・つかみやすい浴槽のフチ、またぎやすい浴槽の高さ・手すり・洗面器置台カウンターなど、安心して使えるユニバーサルデザイン。",
+            "product_image": "images/bath/2.jpg",
+            "product_image_description": "サザナ"
         },
         {
             "visible": true,
-            "id": 1,
-            "manufacturer": "LIXIL",
-            "manufacturer_image": "images/manufacturers/lixil.jpg",
-            "manufacturer_image_description": "LIXIL",
-            "series": "シエラ",
-            "size": [2550],
-            "model": "I型",
-            "retail_price": 599000,
-            "price": 239600,
-            "description": "シンプルな使い勝手の引出し収納プランです。手の届きやすい中段引出しの収納量を充実。普段使いの道具をたっぷり収納できます。",
-            "product_image": "images/products/1.jpg",
-            "product_image_description": "LIXIL シエラi型"
+            "id": 3,
+            "manufacturer": "クリナップ",
+            "manufacturer_image": "images/manufacturers/cleanup.jpg",
+            "manufacturer_image_description": "クリナップ",
+            "series": "ユアシス",
+            "size": [
+                1216,
+                1616
+            ],
+            "model": "ライトプラン",
+            "retail_price": [
+                697000,
+                757000
+            ],
+            "price": [
+                278400,
+                302800
+            ],
+            "description": "シンプルでクリーンな印象のバスルーム。いつも清潔に保てるように、毎日の清掃のしやすさにこだわりました。",
+            "product_image": "images/bath/3.jpg",
+            "product_image_description": "ユアシス"
+        },
+        {
+            "visible": true,
+            "id": 4,
+            "manufacturer": "Takara standard",
+            "manufacturer_image": "images/manufacturers/takara.jpg",
+            "manufacturer_image_description": "Takara standard",
+            "series": "ミーナ",
+            "size": [
+                1216,
+                1616
+            ],
+            "model": "ライトプラン",
+            "retail_price": [
+                0,
+                0
+            ],
+            "price": [
+                261000,
+                284250
+            ],
+            "description": "浴槽素材はもちろんのこと、浴室パネルや洗い場なども、十分な耐久性を持つお手入れのしやすい浴室素材から厳選しました。",
+            "product_image": "images/bath/4.jpg",
+            "product_image_description": "ミーナ"
+        },
+        {
+            "visible": true,
+            "id": 5,
+            "manufacturer": "Panasonic",
+            "manufacturer_image": "images/manufacturers/panasonic.jpg",
+            "manufacturer_image_description": "Panasonic",
+            "series": "バスルームFZ",
+            "size": [
+                1216,
+                1616
+            ],
+            "model": "ベースタイプ",
+            "retail_price": [
+                557000,
+                627000
+            ],
+            "price": [
+                222800,
+                250800
+            ],
+            "description": "浴室全体をキレイに保ちやすいこと、お湯そのものがもたらす快適さ、使い心地のいい様々なアイテム。工夫に工夫を重ねながらバスルームの心地よさを考え抜きました。",
+            "product_image": "images/bath/5.jpg",
+            "product_image_description": "バスルームFZ"
         }
     ]
-
 }
