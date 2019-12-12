@@ -9,10 +9,10 @@ var fs = require('fs')
 var del = require('del')
 var path = require('path')
 
-var destination = 'dist/reform_test'
+var destination = 'dist/reform'
 
 // 変数定義
-out_dir = 'reform_test'
+out_dir = 'reform'
 source = 'src'
 distribute = 'dist'
 base = [distribute, out_dir].join('/')
